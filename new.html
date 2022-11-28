@@ -57,7 +57,7 @@
     <!-- Page Content -->
 
 <body>
-    <div class="container">
+    <div class="container hero">
 
 
         <div class="container" data-aos="fade-up" data-aos-duration="1500" id="iedc-nav">
@@ -109,14 +109,14 @@
                     </div>
                 </div>
 
-                <div class="iedc-nav-overlay" data-wf-ignore="" id="iedc-nav-overlay-0"
-                    style="display: block;">
+                <div class="iedc-nav-overlay" data-wf-ignore="" id="iedc-nav-overlay-0" style="display: block;">
                     <nav role="navigation" class="header-nav-menu-wrapper iedc-nav-menu"
                         style="transform: translateY(0px) translateX(0px); transition: transform 400ms ease 0s;"
                         data-nav-menu-open="">
                         <ul role="list" class="header-nav-menu-list">
                             <li class="header-nav-list-item left">
-                                <a href="/" aria-current="page" class="header-nav-link iedc-nav-link iedc--nav-link-open"
+                                <a href="/" aria-current="page"
+                                    class="header-nav-link iedc-nav-link iedc--nav-link-open"
                                     style="max-width: 1316px;">
                                     Home
                                 </a>
@@ -151,10 +151,39 @@
             </div>
         </div>
 
-
     </div>
+    <section id="about-us" class="about-us">
+        <div class="img-top">
+            <div class="container" data-aos="fade-up" data-aos-duration="1500">
+                <div class="about-card">
+                    <div class="aus">
+                        <div class="title">About Us</div>
+                        <div class="content">
+                            Department Of Computer Science and Engineering, SBCE are
+                            planning to conduct an offline Hackathon named <b>HackBells</b>. This event
+                            is based on the concept, "Today's problem will bring tomorrow's
+                            innovation". The main aim behind this event is to unleash one's creativity
+                            by providing them a perfect platform.
 
-    <div class="container" data-aos="fade-up" data-aos-duration="1500" style="height: 2000px;">
+                        </div>
+                    </div>
+                    <div class="yus">
+                        <div class="title">Why HackBells</div>
+                        <div class="content">
+                            HackBells is a National Level Hackathon which is
+                            open to all students who are enrolled in a recognized
+                            university. Encourages female hackers, non-binary and
+                            transgenders who belongs to tech community. This brings
+                            new learning opportunities and exposure for students in
+                            technology.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container blur" data-aos="fade-up" data-aos-duration="1500" style="height: 2000px;">
         <div class="row">
             <div class="col-md-12">
                 <h1>IEDC SBCE</h1>
@@ -169,7 +198,46 @@
             </div>
         </div>
     </div>
-    
+    <button id="scrollToTopBtn">☝️</button>
+    <footer>
+        <div class="f-content">
+            <div class="f-sec-logo">
+                <img src="images/logo.png" alt="logo" />
+            </div>
+            <div class="f-sec1">
+                <h4>Quick Links</h4>
+                <div class="f-sec1-links">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#schedule-part">Schedule</a>
+                    <a href="#">Achievements</a>
+                    <a href="#faq">FAQs</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </div>
+            <div class="f-sec2">
+                <h4>Resources</h4>
+                <div class="f-sec2-links">
+                    <a href="assets/coc/code-of-conduct.pdf">Code of
+                        Conduct</a>
+                </div>
+            </div>
+            <div class="f-sec3">
+                <h4>Social Links</h4>
+                <p class="text">Follow us for latest updates</p>
+                <div class="f-sec3-links">
+                    <a rel="" href="https://www.instagram.com/hackbells/" target="_blank" class="contact-link">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="cpy">
+            <p>Copyright &copy; <a href="https://hackbells.tech" target="_blank">IEDC SBCE</a> | Designed by <a
+                    href="https://www.instagram.com/hackbells/" target="_blank">CORE TEAM</a></p>
+        </div>
+    </footer>
 </body>
 
 <script>
@@ -200,6 +268,25 @@
 
     })
 
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    var rootElement = document.documentElement;
+    function scrollToTop() {
+        // Scroll to top logic
+        rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+    scrollToTopBtn.addEventListener("click", scrollToTop);
+
+    $(document).scroll(function () {
+        var y = $(this).scrollTop();
+        if (y > 500 || y == undefined) {
+            $('#scrollToTopBtn').fadeIn();
+        } else {
+            $('#scrollToTopBtn').fadeOut();
+        }
+    });
 </script>
 
 </html>
