@@ -28,6 +28,7 @@
 
     <!-- Page Styles -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -86,6 +87,14 @@
                                     <a href="../blog" class="header-nav-link iedc-nav-link" data-aos="fade-up"
                                         data-aos-duration="1650">Achievements</a>
                                 </li>
+                                <li class="header-nav-list-item left">  
+                                     <a href="../mission" class="header-nav-link iedc-nav-link" data-aos="fade-up"
+                                     data-aos-duration="1700">Mission</a>                                 
+                                </li>
+                                <li class="header-nav-list-item left">  
+                                    <a href="../vision" class="header-nav-link iedc-nav-link" data-aos="fade-up"
+                                    data-aos-duration="1750">Vision</a>                                 
+                               </li>
 
                             </ul>
                         </nav>
@@ -99,17 +108,20 @@
                                 <div>Get started</div>
                             </div>
                         </a>
-                        <div class="hamburger-menu-wrapper iedc-nav-button" data-aos="fade-up" data-aos-duration="1750">
-                            <div class="hamburger-menu-icon-wrapper" id="mme">
-                                <div class="hamburger-menu-bar top"></div>
-                                <div class="hamburger-menu-bar bottom"></div>
+                        <a href="javascript:void(0);" onclick="hamfun()">
+                            <div class="hamburger-menu-wrapper iedc-nav-button" data-aos="fade-up"
+                                data-aos-duration="1750" id="mme">
+                                <div class="hamburger-menu-icon-wrapper">
+                                    <div class="hamburger-menu-bar top"></div>
+                                    <div class="hamburger-menu-bar bottom"></div>
+                                </div>
+                                <div class="position-absolute full btn-primary-bg"></div>
                             </div>
-                            <div class="position-absolute full btn-primary-bg"></div>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
-                <div class="iedc-nav-overlay" data-wf-ignore="" id="iedc-nav-overlay-0" style="display: block;">
+                <div class="iedc-nav-overlay" data-wf-ignore="" id="iedc-nav-overlay-0">
                     <nav role="navigation" class="header-nav-menu-wrapper iedc-nav-menu"
                         style="transform: translateY(0px) translateX(0px); transition: transform 400ms ease 0s;"
                         data-nav-menu-open="">
@@ -128,11 +140,17 @@
                                 </a>
                             </li>
                             <li class="header-nav-list-item left">
-                                <a href="/blog" class="header-nav-link iedc-nav-link iedc--nav-link-open"
-                                    style="max-width: 1316px;">
-                                    Achievements
-                                </a>
+                                <a href="../blog" class="header-nav-link iedc-nav-link" data-aos="fade-up"
+                                    data-aos-duration="1650">Achievements</a>
                             </li>
+                            <li class="header-nav-list-item left">  
+                                 <a href="../mission" class="header-nav-link iedc-nav-link" data-aos="fade-up"
+                                 data-aosduration="1700">Mission</a>                                 
+                            </li>
+                            <li class="header-nav-list-item left">  
+                                <a href="../vision" class="header-nav-link iedc-nav-link" data-aos="fade-up"
+                                data-aosduration="1750">Vision</a>                                 
+                           </li>
 
                             <li class="header-nav-list-item show-in-tablet header-nav-btn-tablet">
                                 <a href="/pricing" class="btn-primary width-100 iedc-inline-block">
@@ -147,46 +165,85 @@
                         </ul>
                     </nav>
                 </div>
-
             </div>
+
+        </div>
+
+        <div class="video-container">
+            <div class="color-overlay"></div>
+            <video autoplay loop muted>
+                <source src="images/Sequence 01_1.mp4" type="video/mp4">
+            </video>
         </div>
 
     </div>
-    <section id="about-us" class="about-us">
+
+
+    <section id="about-us" class="about-us welcome abc">
         <div class="img-top">
             <div class="container" data-aos="fade-up" data-aos-duration="1500">
+                <h5 class="section-title h1">MISSION</h5>
                 <div class="about-card">
                     <div class="aus">
-                        <div class="title">About Us</div>
+                        <div class="title">Mission</div>
                         <div class="content">
-                            Department Of Computer Science and Engineering, SBCE are
-                            planning to conduct an offline Hackathon named <b>HackBells</b>. This event
-                            is based on the concept, "Today's problem will bring tomorrow's
-                            innovation". The main aim behind this event is to unleash one's creativity
-                            by providing them a perfect platform.
-
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nulla quo suscipit molestias
+                            ipsum, ut voluptate officiis, laudantium sapiente obcaecati odio reprehenderit? Neque magnam
+                            saepe doloremque facere recusandae eaque optio.
                         </div>
                     </div>
                     <div class="yus">
-                        <div class="title">Why HackBells</div>
                         <div class="content">
-                            HackBells is a National Level Hackathon which is
-                            open to all students who are enrolled in a recognized
-                            university. Encourages female hackers, non-binary and
-                            transgenders who belongs to tech community. This brings
-                            new learning opportunities and exposure for students in
-                            technology.
+                            <img src="/images/123.jpg">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="video-container">
+            <div class="color-overlay"></div>
+            <video autoplay loop muted>
+                <source src="images/Pexels_Videos_1722882_1.mp4" type="video/mp4">
+            </video>
+        </div>
     </section>
- <section id="event" class="pb-5">
+
+
+    <section id="about-us" class="about-us welcome abc">
+        <div class="img-top">
+            <div class="container" data-aos="fade-up" data-aos-duration="1500">
+                <h5 class="section-title h1">VISION</h5>
+                <div class="about-card">
+                    <div class="aus">
+
+                        <div class="content">
+                            <img src="/images/123.jpg">
+                        </div>
+                        
+                    </div>
+                    <div class="yus">
+                        <div class="title">Mission</div>
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nulla quo suscipit molestias
+                            ipsum, ut voluptate officiis, laudantium sapiente obcaecati odio reprehenderit? Neque magnam
+                            saepe doloremque facere recusandae eaque optio.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <div class="color-overlay"></div>
+            <video autoplay loop muted>
+                <source src="images/Pexels_Videos_2611250.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <section id="event" class="pb-5">
         <div class="container">
             <h5 class="section-title h1">EVENTS</h5>
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4"  data-aos="fade-up" data-aos-duration="1550">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                         <div class="mainflip">
                             <div class="frontside">
@@ -212,7 +269,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="1600">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                         <div class="mainflip">
                             <div class="frontside">
@@ -237,16 +294,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="1650">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                         <div class="mainflip">
                             <div class="frontside">
                                 <div class="card">
-                                    <div class="card-body text-center">
+                                    <div class="card-body card-pad text-center ">
                                         <p><img class=" img-fluid" src="images/img3.jpg" alt="card image"></p>
                                         <h4 class="card-title">One day IEDC workshop on ideation to start-up and funding opportunities IEDC</h4>
                                         <p class="card-text"> in association with the ED Club and IIC at Sree Buddha College of Engineering., Pattoor organized a one-day workshop on Ideation to start-up & funding opportunities on 6th May 2022</p>
-                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        <a href="#" class="btn btn-primary btn-sm third-btn"><i class="fa fa-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -269,7 +326,7 @@
         <div class="container">
             <h5 class="section-title h1">ACHIEVEMENTS</h5>
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-duration="1500">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                         <div class="mainflip">
                             <div class="frontside">
@@ -278,7 +335,7 @@
                                         <p><img class=" img-fluid" src="images/img1.jpg" alt="card image"></p>
                                         <h4 class="card-title"></h4>
                                         <p class="card-text">Our IEDC team of 10 students with Nodal officers attended IEDC Summit at SJCET Palai on March 5th, 2022.</p>
-                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        <a href="#" class="btn btn-primary btn-sm "><i class="fa fa-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -353,55 +410,62 @@
                     href="https://www.instagram.com/hackbells/" target="_blank">CORE TEAM</a></p>
         </div>
     </footer>
+    <script>
+        AOS.init();
+
+        var scrollBefore = 0;
+
+        window.addEventListener('scroll', function (e) {
+            const scrolled = window.scrollY;
+
+            if (scrollBefore > scrolled) {
+                console.log("ScrollUP");
+                scrollBefore = scrolled;
+                if (window.pageYOffset >= 500) {
+                    document.getElementById("iedc-nav").classList.add("sticky");
+                }
+                else {
+                    document.getElementById("iedc-nav").classList.remove("sticky");
+                }
+
+            } else {
+                scrollBefore = scrolled;
+                console.log("ScrollDOWN");
+                if (window.pageYOffset <= 500) {
+                    document.getElementById("iedc-nav").classList.remove("sticky");
+                }
+            }
+
+        })
+
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        var rootElement = document.documentElement;
+        function scrollToTop() {
+            // Scroll to top logic
+            rootElement.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+        scrollToTopBtn.addEventListener("click", scrollToTop);
+
+        $(document).scroll(function () {
+            var y = $(this).scrollTop();
+            if (y > 500 || y == undefined) {
+                $('#scrollToTopBtn').fadeIn();
+            } else {
+                $('#scrollToTopBtn').fadeOut();
+            }
+        });
+        function hamfun() {
+            document.getElementById("mme").classList.add("responsive");
+            var navbar = document.getElementById('iedc-nav-overlay-0');
+            var responsive_class_name = 'responsive'
+            navbar.classList.toggle(responsive_class_name)
+        }
+    </script>
+
 </body>
 
-<script>
-    AOS.init();
-
-    var scrollBefore = 0;
-
-    window.addEventListener('scroll', function (e) {
-        const scrolled = window.scrollY;
-
-        if (scrollBefore > scrolled) {
-            console.log("ScrollUP");
-            scrollBefore = scrolled;
-            if (window.pageYOffset >= 500) {
-                document.getElementById("iedc-nav").classList.add("sticky");
-            }
-            else {
-                document.getElementById("iedc-nav").classList.remove("sticky");
-            }
-
-        } else {
-            scrollBefore = scrolled;
-            console.log("ScrollDOWN");
-            if (window.pageYOffset <= 500) {
-                document.getElementById("iedc-nav").classList.remove("sticky");
-            }
-        }
-
-    })
-
-    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-    var rootElement = document.documentElement;
-    function scrollToTop() {
-        // Scroll to top logic
-        rootElement.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    }
-    scrollToTopBtn.addEventListener("click", scrollToTop);
-
-    $(document).scroll(function () {
-        var y = $(this).scrollTop();
-        if (y > 500 || y == undefined) {
-            $('#scrollToTopBtn').fadeIn();
-        } else {
-            $('#scrollToTopBtn').fadeOut();
-        }
-    });
-</script>
 
 </html>
