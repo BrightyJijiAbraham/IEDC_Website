@@ -1594,6 +1594,25 @@ p {
 
 }
 
+.abc .video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.abc .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    height: -webkit-fill-available;
+    box-shadow: 0 2px 80px 0 rgba(0, 0, 0, 0.33);
+}
+
 .color-overlay {
     position: absolute;
     top: 0;
